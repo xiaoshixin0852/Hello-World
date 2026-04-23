@@ -4,7 +4,7 @@ int main()
     int a,c;
     float b;
     float d;
-    scanf("%d\n",&a);
+    scanf("%d",&a);
     for(c=1;c<=a;c++)
     {
         scanf("%f",&b);
@@ -12,4 +12,4 @@ int main()
     }
     printf("%.2f\n",d/a);
     return 0;
-}
+};

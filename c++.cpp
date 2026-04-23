@@ -31,7 +31,7 @@
 //  if(c[i].score2==c[i+1].score2)
 //  if(strcmp(c[i].name,c[i+1].name)>0)
 //  {a[i]=c[i];c[i]=c[i+1];c[i+1]=a[i];}
-//  for(i=0;i<n;i++) 
+//  for(i=0;i<n;i++)
 //  cout<<c[i].name<<" "<<c[i].score1<<" "<<c[i].score2<<endl;
 //  return 0;
 // }
@@ -90,13 +90,13 @@
 //     int X,Y;
 // };
 // inline void Point::Init(int initX,int initY)
-// {   
+// {
 //     X=initX;
 //     Y=initY;
 // }
-// inline int Point::GetX() 
+// inline int Point::GetX()
 // {  return X; }
-// inline int Point::GetY() 
+// inline int Point::GetY()
 // {  return Y; }
 // int main()
 // {
@@ -112,7 +112,7 @@
 // class Clock
 // {public:      //类的外部接口
 //      void SetTime(int NewH=0,int NewM=0,int NewS=0);
-//      void ShowTime();                                                      
+//      void ShowTime();
 //  private:
 //      int Hour,Minute,Second;
 // };
@@ -222,27 +222,27 @@
 //     double voltnumber; // 电压值
 // };
 // // 构造函数实现
-// CPU::CPU(int a, int b, double c) : rank(a), frequency(b), voltnumber(c) 
+// CPU::CPU(int a, int b, double c) : rank(a), frequency(b), voltnumber(c)
 // {
 //     cout << "CPU's constructor is called!" << endl;
 // }
 // // 成员函数run的实现
-// void CPU::run() 
+// void CPU::run()
 // {
-//     cout << "I am working, my rank is " << rank << ", my frequency is " << frequency<< ", my voltnumber is " 
+//     cout << "I am working, my rank is " << rank << ", my frequency is " << frequency<< ", my voltnumber is "
 //     << fixed << setprecision(1) << voltnumber << "." << endl;//保留一位小数
 // }
 // // 成员函数stop的实现
-// void CPU::stop() 
+// void CPU::stop()
 // {
 //     cout << "I stopped working!" << endl;
 // }
 // // 析构函数实现
-// CPU::~CPU() 
+// CPU::~CPU()
 // {
 //     cout << "CPU's destructor is called!" << endl;
 // }
-// int main() 
+// int main()
 // {
 //     int a, b;
 //     double c;
@@ -265,7 +265,7 @@
 // class Circle
 // {
 //   private:
-//     float  radius;       
+//     float  radius;
 //   public:
 //     Circle(float r);            //构造函数
 //     float Circumference() ;     //圆周长
@@ -276,40 +276,40 @@
 // Circle::Circle(float r)
 // {radius=r;}
 // // 计算圆的周长
-// float Circle::Circumference() 
-// {    return 2 * PI * radius; }   
-// // 计算圆的面积 
-// float Circle::Area() 
+// float Circle::Circumference()
+// {    return 2 * PI * radius; }
+// // 计算圆的面积
+// float Circle::Area()
 // {    return PI * radius * radius; }
 // int main ( )
-// { 
+// {
 //   float radius;
-//   float FenceCost, ConcreteCost; 
+//   float FenceCost, ConcreteCost;
 //   // 提示用户输入半径
 //   cout<<"Enter the radius of the pool: ";
 //   cin>>radius;
 //   // 声明 Circle 对象
 //   Circle Pool(radius);
-//   Circle PoolRim(radius + 3);     
+//   Circle PoolRim(radius + 3);
 //   // 计算栅栏造价并输出
 //     FenceCost = PoolRim.Circumference() * FencePrice;
 //     cout << "Fencing Cost is ￥" << FenceCost << endl;
 //  //  计算过道造价并输出
 //     ConcreteCost = (PoolRim.Area() - Pool.Area())*ConcretePrice;
 //     cout << "Concrete Cost is ￥" << ConcreteCost << endl;
-// }  
+// }
 
 /*静态数据成员*/
 // #include <iostream>
 // using namespace std;
-// class Point	
-// {public:	
-// 	Point(int xx=0, int yy=0) {X=xx; Y=yy; countP++; } 
-//     Point(Point &p);	
+// class Point
+// {public:
+// 	Point(int xx=0, int yy=0) {X=xx; Y=yy; countP++; }
+//     Point(Point &p);
 // 	int GetX() {return X;}
 // 	int GetY() {return Y;}
 // 	void GetC() {cout<<" Object id="<<countP<<endl;}
-// private:	
+// private:
 // 	int X,Y;
 // 	static int countP;
 // };
@@ -318,14 +318,14 @@
 // 	Y=p.Y;
 // 	countP++;
 // }
-// int Point::countP=0; 
-// int main()	
-// {	Point A(4,5);	
+// int Point::countP=0;
+// int main()
+// {	Point A(4,5);
 // 	cout<<"Point A,"<<A.GetX()<<","<<A.GetY();
-// 	A.GetC();	
-// 	Point B(A);	
+// 	A.GetC();
+// 	Point B(A);
 // 	cout<<"Point B,"<<B.GetX()<<","<<B.GetY();
-// 	B.GetC();	
+// 	B.GetC();
 // }
 
 /*静态成员函数*/
@@ -333,7 +333,7 @@
 // using namespace std;
 // class Application
 // { public:
-//      static void f(); 
+//      static void f();
 //      static void g();
 //   private:
 //      static int global;
@@ -353,13 +353,13 @@
 // #include <iostream>
 // #include <cmath>
 // using namespace std;
-// class Point	
-// { public:	
+// class Point
+// { public:
 // 	Point(int xx=0, int yy=0) {X=xx;Y=yy;}
 // 	int GetX() {return X;}
 // 	int GetY() {return Y;}
-//  friend double Distance(Point &a, Point &b); 
-//  private:	
+//  friend double Distance(Point &a, Point &b);
+//  private:
 // 	 int X,Y;
 // };
 // double Distance(Point &a,Point &b)
@@ -425,9 +425,9 @@
 // {     cout<<R1<<";"<<R2<<endl; }
 // int main()
 // {   R a(5,4);
-//      a.print();      
-//      const R b(20,52);  
-//      b.print();      
+//      a.print();
+//      const R b(20,52);
+//      b.print();
 // }
 
 /*常数据成员*/
@@ -442,7 +442,7 @@
 // 	 const int a;
 // 	 static const int b;//静态常数据成员
 //  };
-//  const int A::b=10; 
+//  const int A::b=10;
 // A::A(int i):a(i),r(a) //i赋值给a a赋给r
 // { }
 // void A::print()
@@ -466,7 +466,7 @@
 // name1=s;       //正确，name1的值可以改变
 // // *name1='A'    错误，name1所指的值不可以改变
 // /*指针类型的常量*/
-// char *const name2 = p; 
+// char *const name2 = p;
 // // name2="abc"   错误，指针常量值不能改变
 // *name2='A';
 // cout<<name1<<' '<<*name1<<' '<<p<<' '<<*name2<<endl;
@@ -476,7 +476,7 @@
 // #include <iostream>
 // using namespace std;
 // int main()
-// {	
+// {
 // 	int line1[ ]={1,0,0};   //声明数组，矩阵的第一行
 // 	int line2[ ]={0,1,0};   //声明数组，矩阵的第二行
 // 	int line3[ ]={0,0,1};   //声明数组，矩阵的第三行
@@ -496,12 +496,12 @@
 /*对象指针*/
 // #include <iostream>
 // using namespace std;
-// class Point	
-// {public:	
+// class Point
+// {public:
 // 	Point(int xx=0, int yy=0) {X=xx; Y=yy; } //相当于{this->X=xx; this->Y=yy;}
 // 	int GetX() {return X;}
 // 	int GetY() {return Y;}
-// private:	
+// private:
 // 	int X,Y;
 // };
 // int main()
@@ -519,51 +519,51 @@
 /*访问对象的公有成员函数的不同方式*/
 // #include <iostream>
 // using namespace std;
-// class Point	
-// {public:	
-// 	Point(int xx=0, int yy=0) {X=xx; Y=yy; } 
+// class Point
+// {public:
+// 	Point(int xx=0, int yy=0) {X=xx; Y=yy; }
 // 	int GetX() {return X;}
 // 	int GetY() {return Y;}
-// private:	
+// private:
 // 	int X,Y;
 // };
-// int main()	
-// {	Point A(4,5);	
-// 	Point *p1=&A;                          
-// 	int (Point::*pG)()=Point::GetX;//声明成员函数指针并初始化                          
-// 	cout<<(A.*pG)()<<endl;	       //(1)使用成员函数指针访问成员函数                         
-// 	cout<<(p1->GetX)()<<endl;      //(2)使用对象指针访问成员函数	
-//  cout<<A.GetX()<<endl;          //(3)使用对象名访问成员函数	
+// int main()
+// {	Point A(4,5);
+// 	Point *p1=&A;
+// 	int (Point::*pG)()=Point::GetX;//声明成员函数指针并初始化
+// 	cout<<(A.*pG)()<<endl;	       //(1)使用成员函数指针访问成员函数
+// 	cout<<(p1->GetX)()<<endl;      //(2)使用对象指针访问成员函数
+//  cout<<A.GetX()<<endl;          //(3)使用对象名访问成员函数
 // }
 
 /*指向类的静态成员的指针*/
 // #include <iostream>
 // using namespace std;
-// class Point	
-// { public:	
+// class Point
+// { public:
 //     Point(int xx=0, int yy=0)
-//     {X=xx;Y=yy;countP++;}   
-// 	Point(Point &p);                      
+//     {X=xx;Y=yy;countP++;}
+// 	Point(Point &p);
 // 	int GetX() {return X;}
-// 	int GetY() {return Y;}        
+// 	int GetY() {return Y;}
 // 	static void GetC()        //静态函数成员
 //     {cout<<" Object id="<<countP<<endl;}
-//    private:	                
+//    private:
 // 	 int X,Y;
 // 	 static int countP;      //静态数据成员
 // };
 // Point::Point(Point &p)
 // {	X=p.X;  Y=p.Y;  countP++;  }
-// int Point::countP=0;	 
-// int main()	
-// {   
+// int Point::countP=0;
+// int main()
+// {
 // 	void (*gc)()=Point::GetC;//指向函数的指针，指向类的静态成员函数
-// 	Point A(4,5);	
+// 	Point A(4,5);
 // 	cout<<"Point A,"<<A.GetX()<<","<<A.GetY();
-// 	gc();              
-// 	Point B(A);         
+// 	gc();
+// 	Point B(A);
 // 	cout<<"Point B,"<<B.GetX()<<","<<B.GetY();
-// 	gc();             
+// 	gc();
 // }
 
 /*动态创建对象*/
@@ -585,7 +585,7 @@
 // int main()
 // {   cout<<"Step One:"<<endl;
 //      Point *Ptr1=new Point;
-//      delete  Ptr1;   
+//      delete  Ptr1;
 //      cout<<"Step Two:"<<endl;
 //      Ptr1=new Point(1,2);
 //      delete Ptr1;
@@ -609,9 +609,9 @@
 //        int  X,Y;
 // };
 // int main()
-// {  Point *Ptr=new Point[2];    
+// {  Point *Ptr=new Point[2];
 //    Ptr[0].Move(5,10);           //通过指针访问数组元素的成员
-//    Ptr[1].Move(15,20);       
+//    Ptr[1].Move(15,20);
 //    cout<<"Deleting..."<<endl;
 //    delete[ ] Ptr;               //删除整个对象数组
 //    return 0;
@@ -639,7 +639,7 @@
 //          {   numberOfPoints=n;  points=new Point[n];  }
 //        ~ArrayOfPoints()
 //          {   cout<<"Deleting..."<<endl;
-//          numberOfPoints=0;  delete[ ] points;     
+//          numberOfPoints=0;  delete[ ] points;
 //         }
 //       Point &Element(int n)   {  return points[n];  }
 //    private:
@@ -649,12 +649,12 @@
 // int main()
 // {	int number;
 // 	cout<<"Please enter the number of points:";
-// 	cin>>number;       
-//     ArrayOfPoints pts(number);  //创建对象数组   
+// 	cin>>number;
+//     ArrayOfPoints pts(number);  //创建对象数组
 //     pts.Element(0).Move(5,10);  //通过指针访问数组元素的成员
 //     pts.Element(0).GetX();
 //     pts.Element(0).GetY();
-//     pts.Element(1).Move(15,20);   
+//     pts.Element(1).Move(15,20);
 //     pts.Element(1).GetX();
 //     pts.Element(1).GetY();
 // }
@@ -663,14 +663,14 @@
 // #include<iostream>
 // using namespace std;
 // class Point	                   //基类Point类的声明
-// {public:	
+// {public:
 // 	void InitP(float xx=0, float yy=0)
 //         {X=xx;Y=yy;}
 // 	void Move(float xOff, float yOff)
 //         {X+=xOff;Y+=yOff;}
 // 	float GetX() {return X;}
 // 	float GetY() {return Y;}
-// private:	
+// private:
 // 	float X,Y;
 // };
 // class Rectangle: public Point  //派生类声明
@@ -686,7 +686,7 @@
 // int main()
 // {  Rectangle rect;
 // 	rect.InitR(2,3,20,10);        //通过派生类对象访问基类公有成员
-// 	rect.Move(3,2);  
+// 	rect.Move(3,2);
 // 	cout<<rect.GetX()<<','<<rect.GetY()<<','<<rect.GetH()<<','<<rect.GetW()<<endl;
 // 	return 0;
 // }
@@ -695,21 +695,21 @@
 // #include<iostream>
 // using namespace std;
 // class Point	                   //基类Point类的声明
-// {public:	
+// {public:
 // 	void InitP(float xx=0, float yy=0)
 //         {X=xx;Y=yy;}
 // 	void Move(float xOff, float yOff)
 //         {X+=xOff;Y+=yOff;}
 // 	float GetX() {return X;}
 // 	float GetY() {return Y;}
-// private:	
+// private:
 // 	float X,Y;
 // };
 // class Rectangle: private Point	//派生类声明
 // {public:	                        //新增外部接口
 // 	void InitR(float x, float y, float w, float h)
 // 	  { InitP(x,y);  W=w;H=h;}      //访问基类公有成员
-// 	void Move(float xOff, float yOff) 
+// 	void Move(float xOff, float yOff)
 //        { Point::Move(xOff,yOff);}
 // 	float GetX() {return Point::GetX();}
 // 	float GetY() {return Point::GetY();}  //防止重名 Point::只是用于标识区别
@@ -730,7 +730,7 @@
 /*保护继承*/
 // #include<iostream>
 // using namespace std;
-// class A 
+// class A
 // {  protected:
 //        int x;
 //  };
@@ -770,7 +770,7 @@
 //     cout<<"D's constructor called." <<endl;
 // }
 // D::~D() { cout<<"D's destructor called."<<endl;  }
-// void D::Print() const 
+// void D::Print() const
 // {	cout<<d<<endl;  }
 // class C: public D
 // { public:
@@ -810,14 +810,14 @@
 // class D2	//基类D2声明
 // { public:
 // 	D2(int j)    {cout<<"constructing D2 "<<j<<endl;}
-// 	~D2( ) {cout<<"destructing D2 "<<endl;}	
+// 	~D2( ) {cout<<"destructing D2 "<<endl;}
 // };
 // class D3	//基类D3声明
 // { public:
 // 	D3(){cout<<"constructing D3 *"<<endl;}
-// 	~D3( ) {cout<<"destructing D3 "<<endl;}	
+// 	~D3( ) {cout<<"destructing D3 "<<endl;}
 // };
-// class C: public D2, public D1, public D3	
+// class C: public D2, public D1, public D3
 // {public:
 // 	C(int a, int b, int c, int d):
 //     D1(a),memberD2(d),memberD1(c),D2(b){ }
@@ -834,32 +834,32 @@
 /*在第一级继承时要将共同基类设为虚基类*/
 // #include<iostream>
 // using namespace std;
-// class C0	
-// { public:	
+// class C0
+// { public:
 // 	  C0(int n){ nV=n;}
 // 	  int nV;
 // 	  void fun(){cout<<"Member of C0"<<endl;}
 // };
-// class C1: virtual public C0	 
-// {  public:	
+// class C1: virtual public C0
+// {  public:
 // 	   C1(int a) : C0(a) { }
 // 	   int nV1;
 // };
-// class C2: virtual public C0	 
-// {  public:	
+// class C2: virtual public C0
+// {  public:
 // 	   C2(int a) : C0(a) {}
 // 	   int nV2;
 // };
 // class D1: public C1, public C2
 // {
-// public:	
+// public:
 // 	D1(int a) : C0(a), C1(a), C2(a){ }
 // 	int nVd;
 // 	void fund(){cout<<"Member of D1"<<endl;}
 // };
-// int main()	
+// int main()
 // {
-// 	D1 d1(1);	
+// 	D1 d1(1);
 // 	d1.nV=2;
 // 	d1.fun();
 // }
@@ -873,21 +873,21 @@
 // 	void display()
 //       {cout<<"C0::display()"<<endl;}	//公有成员函数
 // };
-// class C1: public C0	
+// class C1: public C0
 // { public:
 // 	 void display(){cout<<"C1::display()"<<endl;}
 //  };
-// class D1: public C1	
+// class D1: public C1
 // { public:
 // 	 void display(){cout<<"D1::display()"<<endl;}
 //  };
-// void fun(C0 *ptr)	
+// void fun(C0 *ptr)
 // {	ptr->display();	 }
-// int main()	
-// {	C0 c0;	
-// 	C1 c1;	
-// 	D1 d1;	
-// 	C0 *p;	
+// int main()
+// {	C0 c0;
+// 	C1 c1;
+// 	D1 d1;
+// 	C0 *p;
 // 	p=&c0;	//C0类指针指向C0类对象
 // 	fun(p);
 // 	p=&c1;	//C0类指针指向C1类对象
@@ -902,9 +902,9 @@
 // #include <iostream>
 // using namespace std;
 // class A0	                                    //基类A0声明
-// {public:	
+// {public:
 // 	virtual void display( )                     //虚成员函数
-//      {cout<<"A0::display( )"<<endl;} 
+//      {cout<<"A0::display( )"<<endl;}
 // };
 // class A1: public A0	                            //公有派生
 // { public:
@@ -916,10 +916,10 @@
 // };
 // void fun(A0 *ptr)	                            //普通函数
 // {    ptr->display( ); }
-// int main( )	
+// int main( )
 // {	A0 a0,  *p;                                 //声明基类对象和指针
-// 	A1 a1;	
-// 	D1 d1;	
+// 	A1 a1;
+// 	D1 d1;
 // 	p= &a0;
 // 	fun(p);	                                    //调用基类A0函数成员
 // 	p= &a1;
@@ -937,21 +937,20 @@
 // };
 // class A1: public A0                              //公有派生
 // { public:
-// 	void display( ){cout<<"A1::display()"<<endl;}                                                                     
+// 	void display( ){cout<<"A1::display()"<<endl;}
 // };
 // class D1: public A1                              //公有派生
 // { public:
-// 	void display( ){cout<<"D1::display()"<<endl;}                                                                     
+// 	void display( ){cout<<"D1::display()"<<endl;}
 // };
-// void fun(A0 *ptr)	
+// void fun(A0 *ptr)
 // {	ptr->display();   }
-// int main( )	
+// int main( )
 // {	A0 *p;	                                     //声明抽象基类指针
-// 	A1 a1;                
-// 	D1 d1;               
+// 	A1 a1;
+// 	D1 d1;
 // 	p=&a1;
 // 	fun(p);	                                     //调用派生类A1函数成员
 // 	p= &d1;
 // 	fun(p);	                                     //调用派生类D1函数成员
 // }
-
