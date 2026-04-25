@@ -1,0 +1,14 @@
+{
+	"servers": {
+    "my_Mcp_local_File":{
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+        "@modelcontextprotocol/server-filesystem",
+        "D:\\Program\\Hello_World",
+		"D:\\Dell\\桌面"
+      ]
+		}
+	},
+	"inputs": []
+}
